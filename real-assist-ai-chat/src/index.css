@@ -1,6 +1,6 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  font-weight:lighter;
+  font-weight: lighter;
   line-height: 1.5;
   font-weight: 400;
 }
@@ -8,56 +8,79 @@
 body {
   margin: 0;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navbar {
-  display:flex;
-
-
+  display: flex;
 }
+
 .menu-container {
   margin: 20px;
+}
+
+.sidebar {
+  background: rgb(115, 115, 246);
+  color:azure;
+  height: 20vh;
+
 }
 
 h1 {
   margin-top: 3em;
   font-size: 1em;
-  line-height: .25;
+  line-height: 0.25;
 }
 
 p {
-  font-size: 10px;
+  font-size: 20px;
 }
+
 .menu {
   height: 35px;
   margin-top: 1em;
 }
+
 .main-chat-container {
-  background-color:rgb(243, 242, 245);
-  align-content: center;
-  justify-content: center;
-  height: 100vh;
-  width: 100vw;
+  background-color: rgb(137, 108, 196);
+
+  padding: 10px;
 }
 
 .chat-input-left {
+  align-content: left;
+  justify-content: left;
   border-radius: 0 5px 5px 5px;
-  border-color: rgb(243, 242, 245); 
+  border-color: rgb(243, 242, 245);
+  color:rgb(85, 36, 131);
+  background-color: rgb(243, 242, 245);
+  padding: 2px;
 }
 
 .chat-input-right {
+  float: right;
   border-radius: 5px 0 5px 5px;
-  border-color: rgb(243, 242, 245); 
-  background-color: blue;
+  border-color: rgb(243, 242, 245);
+  color: rgb(126, 20, 239);
+  background-color: rgb(242, 231, 248);
 }
+
 .encrypted-note {
   display: flex;
   justify-content: center;
+  background-color: rgb(191, 174, 243);
+  align-content: center;
+  justify-content: center;
+  height: 10vh;
+  width: auto;
+  padding: 10px;
 }
+
 .encrypted-note p {
-  font-size: .5em;
-  color:darkgrey;
-  background-color:rgb(233, 229, 229);
+  font-size: 2em;
+  color: rgb(169, 67, 237);
+  background-color: rgb(244, 241, 239);
   border-radius: 5px;
- 
+  padding: 10px;
 }

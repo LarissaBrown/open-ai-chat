@@ -15,6 +15,7 @@ app.use(express.json())
 app.use(cors())
 
 app.post('/message', async(req, res) => {
+    console.log("app.post /message",req)
     const response = await openai.createCompletion({
         model: 'text-davinchi-003',
         prompt: req.body.prompt,
@@ -25,6 +26,7 @@ app.post('/message', async(req, res) => {
         max_tokens: 1024 ,   
 })
     response.then((data) => {
+        console.log("response.then(data)", data),
         res.send({message:data.data.choices[1].text});
     })
 
