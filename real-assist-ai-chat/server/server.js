@@ -1,8 +1,10 @@
 import express from 'express'
-const app = express()
 import cors from 'cors'
 import { Configuration, OpenAIApi } from 'openai'
 
+
+
+const app = express()
 
 const configuration = new Configuration({
     organization: "org-XVof9YY6mHN5rnZO0ANlz2bH",
