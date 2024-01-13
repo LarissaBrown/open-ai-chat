@@ -3,6 +3,8 @@ import cors from 'cors'
 import { Configuration, OpenAIApi } from 'openai'
 
 
+//inline terminal code = node server/server.js
+
 
 const app = express()
 
